@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackMarket Airsoft</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    header {
+      background: #161616;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #d32f2f;
+      letter-spacing: 2px;
+    }
+
+    .banner {
+      background: url('https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=1600&auto=format&fit=crop') center/cover;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 10px black;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .price {
+      color: #4caf50;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .cart {
+      background: #181818;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 10px;
+      height: fit-content;
+      position: sticky;
+      top: 20px;
+    }
+
+    .cart h2 {
+      margin-top: 0;
+      color: #ff5252;
+    }
+
+    .cart-item {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    .total {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      color: #4caf50;
+    }
+
+    .checkout {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #d32f2f;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .checkout:hover {
+      background: #f44336;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      border-top: 1px solid #333;
+      margin-top: 30px;
+    }
+
+    .warning {
+      background: #222;
+      border-left: 4px solid orange;
+      padding: 15px;
+      margin: 20px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BLACKMARKET AIRSOFT</h1>
+    <p>Réplique • Équipement • Accessoires</p>
+  </header>
+
+  <div class="banner">
+    Vente privée - Catalogue réservé
+  </div>
+
+  <div class="warning">
+    Site fictif créé pour un challenge OSINT / CTF. Aucun produit réel n'est vendu.
+  </div>
+
+  <div class="container">
+
+    <section class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop" alt="Réplique airsoft">
+        <div class="card-content">
+          <h3>VX-9 Phantom</h3>
+          <p>Réplique airsoft premium silencieuse.</p>
+          <div class="price">329€</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Équipement tactique">
+        <div class="card-content">
+          <h3>Kit Tactical Raven</h3>
+          <p>Pack équipement noir complet.</p>
+          <div class="price">149€</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Lunette">
+        <div class="card-content">
+          <h3>Scope X4 Ghost</h3>
+          <p>Optique tactique pour répliques.</p>
+          <div class="price">89€</div>
+        </div>
+      </div>
+
+    </section>
+
+    <aside class="cart">
+      <h2>Panier</h2>
+
+      <div class="cart-item">
+        <strong>VX-9 Phantom</strong><br>
+        Quantité : 1<br>
+        329€
+      </div>
+
+      <div class="cart-item">
+        <strong>Scope X4 Ghost</strong><br>
+        Quantité : 2<br>
+        178€
+      </div>
+
+      <div class="cart-item">
+        <strong>Kit Tactical Raven</strong><br>
+        Quantité : 1<br>
+        149€
+      </div>
+
+      <div class="total">
+        Total : 656€
+      </div>
+
+      <button class="checkout">Procéder au paiement</button>
+    </aside>
+
+  </div>
+
+  <footer>
+    BlackMarket Airsoft © 2026 - Site de démonstration fictif
+  </footer>
+
+</body>
+</html>
